@@ -56,15 +56,23 @@
 		12E44847259F1FD300AD597B /* RedChair */ = {
 			isa = PBXGroup;
 			children = (
+				12E4485C259F218200AD597B /* Resources */,
 				12E44848259F1FD300AD597B /* AppDelegate.swift */,
 				12E4484A259F1FD300AD597B /* SceneDelegate.swift */,
 				12E4484C259F1FD300AD597B /* ViewController.swift */,
 				12E4484E259F1FD300AD597B /* Main.storyboard */,
-				12E44851259F1FD600AD597B /* Assets.xcassets */,
 				12E44853259F1FD600AD597B /* LaunchScreen.storyboard */,
 				12E44856259F1FD600AD597B /* Info.plist */,
 			);
 			path = RedChair;
+			sourceTree = "<group>";
+		};
+		12E4485C259F218200AD597B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				12E44851259F1FD600AD597B /* Assets.xcassets */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
