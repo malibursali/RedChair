@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		12E44845259F1FD300AD597B /* RedChair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RedChair.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		12E44845259F1FD300AD597B /* Red Chair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Chair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E44848259F1FD300AD597B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E4484A259F1FD300AD597B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		12E4484C259F1FD300AD597B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		12E44846259F1FD300AD597B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				12E44845259F1FD300AD597B /* RedChair.app */,
+				12E44845259F1FD300AD597B /* Red Chair.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = RedChair;
 			productName = RedChair;
-			productReference = 12E44845259F1FD300AD597B /* RedChair.app */;
+			productReference = 12E44845259F1FD300AD597B /* Red Chair.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -292,9 +292,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammedalibursali.RedChair;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Red Chair";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -310,9 +310,9 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.muhammedalibursali.RedChair;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Red Chair";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
