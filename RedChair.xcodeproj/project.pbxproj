@@ -48,11 +48,9 @@
 		12E448CF25A0FDFE00AD597B /* MovieDetailPlotTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 12E448CD25A0FDFE00AD597B /* MovieDetailPlotTableViewCell.xib */; };
 		12E448D625A1B71200AD597B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 12E448D525A1B71200AD597B /* GoogleService-Info.plist */; };
 		12E448D825A1BD2100AD597B /* FirebaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E448D725A1BD2000AD597B /* FirebaseService.swift */; };
-		FC28AB6D59AE121AA619E01E /* Pods_RedChair.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F904D0883536A37B1B734EDD /* Pods_RedChair.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		019AF284714B1BF811B9CD16 /* Pods-RedChair.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedChair.release.xcconfig"; path = "Target Support Files/Pods-RedChair/Pods-RedChair.release.xcconfig"; sourceTree = "<group>"; };
 		12E44845259F1FD300AD597B /* Red Chair.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Red Chair.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E44848259F1FD300AD597B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E4484A259F1FD300AD597B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -96,8 +94,6 @@
 		12E448CD25A0FDFE00AD597B /* MovieDetailPlotTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieDetailPlotTableViewCell.xib; sourceTree = "<group>"; };
 		12E448D525A1B71200AD597B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		12E448D725A1BD2000AD597B /* FirebaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseService.swift; sourceTree = "<group>"; };
-		440692FF583B6EB96B780682 /* Pods-RedChair.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RedChair.debug.xcconfig"; path = "Target Support Files/Pods-RedChair/Pods-RedChair.debug.xcconfig"; sourceTree = "<group>"; };
-		F904D0883536A37B1B734EDD /* Pods_RedChair.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RedChair.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +101,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC28AB6D59AE121AA619E01E /* Pods_RedChair.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +113,6 @@
 				12E44847259F1FD300AD597B /* RedChair */,
 				12E44846259F1FD300AD597B /* Products */,
 				9F00D3A542DCD5D7D2550AF4 /* Pods */,
-				C29E1453F5DE3510EB106A65 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -390,18 +384,8 @@
 		9F00D3A542DCD5D7D2550AF4 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				440692FF583B6EB96B780682 /* Pods-RedChair.debug.xcconfig */,
-				019AF284714B1BF811B9CD16 /* Pods-RedChair.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		C29E1453F5DE3510EB106A65 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				F904D0883536A37B1B734EDD /* Pods_RedChair.framework */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -411,11 +395,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12E44859259F1FD600AD597B /* Build configuration list for PBXNativeTarget "RedChair" */;
 			buildPhases = (
-				022A9663F4E2B9F9AFF2633B /* [CP] Check Pods Manifest.lock */,
 				12E44841259F1FD300AD597B /* Sources */,
 				12E44842259F1FD300AD597B /* Frameworks */,
 				12E44843259F1FD300AD597B /* Resources */,
-				F33B75C4CA44F0C0610013B6 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -478,48 +460,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
-
-/* Begin PBXShellScriptBuildPhase section */
-		022A9663F4E2B9F9AFF2633B /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RedChair-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		F33B75C4CA44F0C0610013B6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RedChair/Pods-RedChair-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RedChair/Pods-RedChair-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RedChair/Pods-RedChair-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		12E44841259F1FD300AD597B /* Sources */ = {
@@ -679,7 +619,6 @@
 		};
 		12E4485A259F1FD600AD597B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 440692FF583B6EB96B780682 /* Pods-RedChair.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -699,7 +638,6 @@
 		};
 		12E4485B259F1FD600AD597B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 019AF284714B1BF811B9CD16 /* Pods-RedChair.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
