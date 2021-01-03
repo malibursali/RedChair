@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QWA-NM-SZc">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="9kF-wv-cAX">
+            <objects>
+                <viewController id="QWA-NM-SZc" customClass="HomeViewController" customModule="Red_Chair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tef-8P-E9o">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="o8h-jG-g4Q" customClass="MovieTableView" customModule="Red_Chair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="113" width="414" height="749"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1Lm-mH-4xK" customClass="SearchBarView" customModule="Red_Chair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="69"/>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1Lm-mH-4xK" secondAttribute="height" multiplier="6:1" id="8sd-Cv-5JJ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="8sd-Cv-5JJ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="8sd-Cv-5JJ"/>
+                                    </mask>
+                                </variation>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="1Lm-mH-4xK" firstAttribute="top" secondItem="xe1-PK-f0C" secondAttribute="top" id="48t-Be-mhI"/>
+                            <constraint firstItem="o8h-jG-g4Q" firstAttribute="top" secondItem="1Lm-mH-4xK" secondAttribute="bottom" id="IXY-9Q-anD"/>
+                            <constraint firstItem="o8h-jG-g4Q" firstAttribute="leading" secondItem="xe1-PK-f0C" secondAttribute="leading" id="N73-Nt-3nF"/>
+                            <constraint firstItem="xe1-PK-f0C" firstAttribute="trailing" secondItem="1Lm-mH-4xK" secondAttribute="trailing" id="Yd4-Vu-ZkQ"/>
+                            <constraint firstItem="1Lm-mH-4xK" firstAttribute="leading" secondItem="xe1-PK-f0C" secondAttribute="leading" id="Yeq-ZN-qfk"/>
+                            <constraint firstItem="xe1-PK-f0C" firstAttribute="trailing" secondItem="o8h-jG-g4Q" secondAttribute="trailing" id="fhf-R4-IMk"/>
+                            <constraint firstItem="xe1-PK-f0C" firstAttribute="bottom" secondItem="o8h-jG-g4Q" secondAttribute="bottom" id="fvO-e0-K3I"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="xe1-PK-f0C"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="o8h-jG-g4Q"/>
+                                <exclude reference="1Lm-mH-4xK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Yd4-Vu-ZkQ"/>
+                                <exclude reference="fhf-R4-IMk"/>
+                                <exclude reference="fvO-e0-K3I"/>
+                                <exclude reference="48t-Be-mhI"/>
+                                <exclude reference="Yeq-ZN-qfk"/>
+                                <exclude reference="IXY-9Q-anD"/>
+                                <exclude reference="N73-Nt-3nF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="o8h-jG-g4Q"/>
+                                <include reference="1Lm-mH-4xK"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Yd4-Vu-ZkQ"/>
+                                <include reference="fhf-R4-IMk"/>
+                                <include reference="fvO-e0-K3I"/>
+                                <include reference="48t-Be-mhI"/>
+                                <include reference="Yeq-ZN-qfk"/>
+                                <include reference="IXY-9Q-anD"/>
+                                <include reference="N73-Nt-3nF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="searchBarView" destination="1Lm-mH-4xK" id="9f0-JK-fXz"/>
+                        <outlet property="tableView" destination="o8h-jG-g4Q" id="7YW-DS-iMu"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TME-Qr-vU7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="13.043478260869566" y="97.767857142857139"/>
+        </scene>
+    </scenes>
+</document>

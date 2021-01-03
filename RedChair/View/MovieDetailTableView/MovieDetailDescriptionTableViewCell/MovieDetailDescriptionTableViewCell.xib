@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="MovieDetailDescriptionTableViewCellID" rowHeight="207" id="KGk-i7-Jjw" customClass="MovieDetailDescriptionTableViewCell" customModule="Red_Chair" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5fw-d0-yPq" userLabel="Title">
+                        <rect key="frame" x="8" y="5" width="304" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="25"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="isq-WR-mYL" userLabel="Year">
+                        <rect key="frame" x="8" y="10" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
+                        <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UzM-kG-IXz" userLabel="Director">
+                        <rect key="frame" x="8" y="17" width="0.0" height="0.0"/>
+                        <fontDescription key="fontDescription" name="Avenir-Medium" family="Avenir" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="UzM-kG-IXz" firstAttribute="centerY" secondItem="isq-WR-mYL" secondAttribute="centerY" multiplier="1.7" id="8Qc-1u-DJX"/>
+                    <constraint firstItem="isq-WR-mYL" firstAttribute="leading" secondItem="5fw-d0-yPq" secondAttribute="leading" id="b4E-qA-ssD"/>
+                    <constraint firstItem="5fw-d0-yPq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="centerX" multiplier="0.05" id="bOz-zH-jqB"/>
+                    <constraint firstItem="UzM-kG-IXz" firstAttribute="leading" secondItem="5fw-d0-yPq" secondAttribute="leading" id="cxa-dv-mKj"/>
+                    <constraint firstItem="5fw-d0-yPq" firstAttribute="width" secondItem="H2p-sc-9uM" secondAttribute="width" multiplier="0.95" id="erp-zh-h1a"/>
+                    <constraint firstItem="isq-WR-mYL" firstAttribute="top" secondItem="5fw-d0-yPq" secondAttribute="centerY" multiplier="2" id="m0z-3i-iVk"/>
+                    <constraint firstItem="5fw-d0-yPq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="centerY" multiplier="0.05" id="yzu-gY-aun"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="subviews">
+                        <exclude reference="5fw-d0-yPq"/>
+                        <exclude reference="isq-WR-mYL"/>
+                        <exclude reference="UzM-kG-IXz"/>
+                    </mask>
+                    <mask key="constraints">
+                        <exclude reference="bOz-zH-jqB"/>
+                        <exclude reference="erp-zh-h1a"/>
+                        <exclude reference="yzu-gY-aun"/>
+                        <exclude reference="b4E-qA-ssD"/>
+                        <exclude reference="m0z-3i-iVk"/>
+                        <exclude reference="8Qc-1u-DJX"/>
+                        <exclude reference="cxa-dv-mKj"/>
+                    </mask>
+                </variation>
+                <variation key="heightClass=regular-widthClass=compact">
+                    <mask key="subviews">
+                        <include reference="5fw-d0-yPq"/>
+                        <include reference="isq-WR-mYL"/>
+                        <include reference="UzM-kG-IXz"/>
+                    </mask>
+                    <mask key="constraints">
+                        <include reference="bOz-zH-jqB"/>
+                        <include reference="erp-zh-h1a"/>
+                        <include reference="yzu-gY-aun"/>
+                        <include reference="b4E-qA-ssD"/>
+                        <include reference="m0z-3i-iVk"/>
+                        <include reference="8Qc-1u-DJX"/>
+                        <include reference="cxa-dv-mKj"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="directorLabel" destination="UzM-kG-IXz" id="7gG-DB-fSd"/>
+                <outlet property="infoLabel" destination="isq-WR-mYL" id="pxo-eU-OtC"/>
+                <outlet property="titleLabel" destination="5fw-d0-yPq" id="iNa-N5-av7"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="195.20089285714286"/>
+        </tableViewCell>
+    </objects>
+</document>

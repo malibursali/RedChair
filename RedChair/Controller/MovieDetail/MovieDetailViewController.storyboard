@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="K8w-3e-s16">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Movie Detail View Controller-->
+        <scene sceneID="oIg-HT-rDK">
+            <objects>
+                <viewController id="K8w-3e-s16" customClass="MovieDetailViewController" customModule="Red_Chair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="MBR-co-mdS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" bounces="NO" bouncesZoom="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="lXi-Nk-LIj" customClass="MovieDetailTableView" customModule="Red_Chair" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lXi-Nk-LIj" firstAttribute="leading" secondItem="Ixd-Hl-skF" secondAttribute="leading" id="Bh4-aY-QwP"/>
+                            <constraint firstItem="Ixd-Hl-skF" firstAttribute="trailing" secondItem="lXi-Nk-LIj" secondAttribute="trailing" id="g07-4i-Hnb"/>
+                            <constraint firstItem="lXi-Nk-LIj" firstAttribute="top" secondItem="Ixd-Hl-skF" secondAttribute="top" id="sQ6-Jk-sCm"/>
+                            <constraint firstItem="Ixd-Hl-skF" firstAttribute="bottom" secondItem="lXi-Nk-LIj" secondAttribute="bottom" id="v3n-WQ-l3f"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ixd-Hl-skF"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="lXi-Nk-LIj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="Bh4-aY-QwP"/>
+                                <exclude reference="sQ6-Jk-sCm"/>
+                                <exclude reference="g07-4i-Hnb"/>
+                                <exclude reference="v3n-WQ-l3f"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="lXi-Nk-LIj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="Bh4-aY-QwP"/>
+                                <include reference="sQ6-Jk-sCm"/>
+                                <include reference="g07-4i-Hnb"/>
+                                <include reference="v3n-WQ-l3f"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="lXi-Nk-LIj" id="VCa-6d-HiP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d9U-Je-BwM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7" y="108"/>
+        </scene>
+    </scenes>
+</document>

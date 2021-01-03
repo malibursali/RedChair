@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.3" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RMQ-CY-paC">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Splash View Controller-->
+        <scene sceneID="jbM-NZ-SiT">
+            <objects>
+                <viewController id="RMQ-CY-paC" customClass="SplashViewController" customModule="Red_Chair" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="UHO-Pq-hjM">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Icon" translatesAutoresizingMaskIntoConstraints="NO" id="NHk-Yt-bBp">
+                                <rect key="frame" x="157.5" y="251.5" width="99" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="NHk-Yt-bBp" secondAttribute="height" multiplier="4:5" id="Q4F-Kb-XCx"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Q4F-Kb-XCx"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="constraints">
+                                        <include reference="Q4F-Kb-XCx"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ygO-dG-krj">
+                                <rect key="frame" x="131" y="448" width="152.5" height="0.0"/>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="35"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="NHk-Yt-bBp" firstAttribute="centerX" secondItem="UHO-Pq-hjM" secondAttribute="centerX" id="7F7-Uf-tOg"/>
+                            <constraint firstItem="ygO-dG-krj" firstAttribute="centerX" secondItem="UHO-Pq-hjM" secondAttribute="centerX" id="CcD-lq-bJX"/>
+                            <constraint firstItem="NHk-Yt-bBp" firstAttribute="centerY" secondItem="UHO-Pq-hjM" secondAttribute="centerY" multiplier="0.7" id="Fl5-eA-ZPE"/>
+                            <constraint firstItem="ygO-dG-krj" firstAttribute="width" secondItem="UHO-Pq-hjM" secondAttribute="width" multiplier="0.368357" id="PKk-Up-f6D"/>
+                            <constraint firstItem="ygO-dG-krj" firstAttribute="centerY" secondItem="UHO-Pq-hjM" secondAttribute="centerY" id="iWU-Xt-WMF"/>
+                            <constraint firstItem="NHk-Yt-bBp" firstAttribute="width" secondItem="UHO-Pq-hjM" secondAttribute="width" multiplier="0.24" id="zuB-TG-09v"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="deM-Rn-uDg"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="NHk-Yt-bBp"/>
+                                <exclude reference="ygO-dG-krj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="7F7-Uf-tOg"/>
+                                <exclude reference="Fl5-eA-ZPE"/>
+                                <exclude reference="zuB-TG-09v"/>
+                                <exclude reference="CcD-lq-bJX"/>
+                                <exclude reference="PKk-Up-f6D"/>
+                                <exclude reference="iWU-Xt-WMF"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="NHk-Yt-bBp"/>
+                                <include reference="ygO-dG-krj"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="7F7-Uf-tOg"/>
+                                <include reference="Fl5-eA-ZPE"/>
+                                <include reference="zuB-TG-09v"/>
+                                <include reference="CcD-lq-bJX"/>
+                                <include reference="PKk-Up-f6D"/>
+                                <include reference="iWU-Xt-WMF"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="titleLabel" destination="ygO-dG-krj" id="SMN-fB-tgl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4IX-p7-3ry" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="108" y="70"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Icon" width="96" height="120"/>
+    </resources>
+</document>
